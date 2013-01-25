@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 2.8)
+
+add_custom_target(clean-all
+   COMMAND ${CMAKE_BUILD_TOOL} clean
+)
+
+add_custom_target(test
+   COMMAND ${CMAKE_BINARY_DIR}/test/main
+)

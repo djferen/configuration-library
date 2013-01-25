@@ -1,0 +1,25 @@
+{  // Test Comment 1
+/* Test Comment 2 */
+    "qpidConnections": {  // Test Comment 3
+      "primary": {
+        "URIs":
+			["localhost:40000"],
+        "defaultEx": "Some.Ex",
+        "options": {
+          "heartbeat": 30,
+          "tcpNoDelay": false,
+          "maxChannels": 100
+        }
+      },
+      "secondary": {
+        "URIs": 
+        	["localhost:40001", "remotehost:40001"],
+        "defaultEx": "SomeOther.Ex",
+        "options": {
+          "heartbeat": 30,
+          "tcpNoDelay": false,
+          "maxChannels": 100
+        }
+      }
+    }
+}
